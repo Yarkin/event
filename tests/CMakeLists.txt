@@ -1,4 +1,4 @@
-add_compile_options(-Wno-unused-parameter)
+add_compile_options(-Wno-unused-parameter, -WX)
 
 aux_source_directory(./ xevent_test_dir)
 add_executable(xevent_test ${xevent_test_dir} ../src/subscriber.cpp ../src/broker.cpp ../src/publisher.cpp)
